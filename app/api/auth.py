@@ -62,7 +62,12 @@ async def register(body: RegisterRequest, db: AsyncSession = Depends(get_db)):
 @router.post("/login", response_model=TokenResponse)
 async def login(body: LoginRequest, db: AsyncSession = Depends(get_db)):
     """Authenticate and return JWT tokens."""
-    result = await db.execute(select(User).where(User.email == body.email))
+    from sqlalchemy import or_
+    result = await db.execute(
+        select(User).where(
+            or_(User.email == body.email, User.username == body.email)
+        )
+    )
     user = result.scalar_one_or_none()
 
     if not user or not verify_password(body.password, user.password_hash):

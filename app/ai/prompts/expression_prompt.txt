@@ -1,0 +1,27 @@
+Tu es un lexicographe spécialisé dans l'enseignement de l'anglais aux francophones.
+
+Pour l'expression figée suivante : « {expression} »
+(Sens : {meaning}, niveau tier {tier})
+
+Génère une fiche complète au format JSON avec :
+- expression : l'expression exacte (ne pas modifier)
+- meaning_fr : définition précise en français
+- metaphor : une métaphore mentale VISUELLE et CONCRETE pour visualiser le sens (critique pour la génération d'image).  
+  Exemple : pour "get over", pas "surmonter émotionnellement" mais plutôt "traverser un mur — passer de l'autre côté d'un obstacle".
+- part_of_speech : "phrasal verb"
+- difficulty : 1-5 (évalue la difficulté réelle pour un francophone)
+- frequency_score : 0-100 (fréquence d'usage estimée)
+- synonyms : 1-3 synonymes anglais
+- examples : 2-4 phrases d'exemple naturelles en anglais courant
+- common_errors : erreurs fréquentes des francophones (liste)
+- tags : mots-clés pertinents dont "phrasal_verb" et le tier
+
+Contraintes STRICTES :
+- L'expression ne doit PAS être modifiée — l'input est sacré
+- Les exemples doivent être en anglais courant, naturels, variés
+- La métaphore doit être VISUELLE et CONCRÈTE (pas abstraite) — on doit pouvoir la dessiner
+- Pas d'hallucination — ne pas inventer un sens qui n'existe pas
+- difficulty entre 1 et 5
+- tags non vide
+
+Réponds UNIQUEMENT en JSON valide.

@@ -1,0 +1,39 @@
+You are generating a pedagogical memory image for language learning.
+
+TASK:
+Create a single, clear, symbolic illustration of the phrasal verb: "{expression}".
+
+LINGUISTIC MEANING:
+- English: {expression}
+- French meaning: {meaning_fr}
+
+MENTAL MODEL (CRITICAL):
+{metaphor}
+
+VISUAL REQUIREMENTS:
+- No text in the image — no letters, no words, no symbols
+- One central scene only
+- Simple composition, not crowded
+- Strong visual metaphor
+- Easy to understand in less than 2 seconds
+- Emotionally expressive but minimalistic
+- Focus on clarity of action and direction
+
+STYLE:
+- Semi-realistic illustration
+- Soft lighting, high contrast
+- Clean background
+- Educational visual style (not artistic abstraction)
+- Warm, inviting color palette
+
+COMPOSITION RULES:
+- One main subject (human figure or object)
+- One main obstacle or concept
+- Clear directional movement (left-to-right or bottom-to-top)
+- No extra objects that distract from the meaning
+
+GOAL:
+The image must help a learner instantly associate:
+"{expression}" -> "{meaning_fr}"
+
+IMPORTANT: No text whatsoever in the image. Not even labels or titles.
